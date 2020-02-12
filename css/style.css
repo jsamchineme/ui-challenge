@@ -1,0 +1,340 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open sans';
+  font-size: 14px;
+}
+
+
+.top-header {
+  height: 50px;
+  background-color: #6357bc;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.top-header .right {
+  display: flex;
+  height: 70%;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-circle {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  background-color: #9289d0;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-header .name-label {
+  margin-left: 8px;
+  margin-right: 8px;
+  color: white;
+}
+
+.top-header .arrow-down {
+  display: flex;
+  color: #2c2c2c;
+  font-weight: bold;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(180deg);
+}
+
+li {
+  display: flex;
+}
+
+.main-body {
+  display: flex;
+}
+
+.main-body .side-bar {
+  width: 50px;
+  padding-top: 40px;
+  background-color: #eef3f7;
+  border-right: 1px solid #cccccc;
+}
+
+.main-body .side-bar li {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.main-body .main-right {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.main-body .main-right .heading {
+  padding: 10px;
+  padding-top: 20px;
+  height: 50px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.main-right-body {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-right-body .tab-area-left {
+  width: 25%;
+  border-right: 1px solid #eef3f7
+}
+
+.main-right-body .right-of-tab {
+  width: 75%;
+}
+
+.tab-area-left .header {
+  height: 50px;
+  border-bottom: 1px solid #eef3f7;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.tab-area-left li {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.tab-area-left li a {
+  display: block;
+  text-decoration: none;
+  color: #73799b;
+  font-size: 10px;
+}
+
+.tab-area-left li.active {
+  background-color: #eef3f7;
+}
+
+.tab-area-left li.active a {
+  color: #6357bc;
+}
+
+.tab-area-left .conversation-list {
+  padding: 15px;
+}
+
+.tab-area-left .conversation-list .message {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #f0f3f5;
+}
+
+.tab-area-left .conversation-list .message .left {
+  width: 20px;
+}
+
+.tab-area-left .conversation-list .message .center {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.conversation-list .message .center .username {
+  font-size: 12px;
+  color: #373a55;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.conversation-list .message .center .title {
+  font-size: 10px;
+  color: #4c4f66;
+  margin-bottom: 5px;
+}
+
+.conversation-list .message .center .content {
+  font-size: 10px;
+  color: #a3a8bf;
+}
+
+.tab-area-left .conversation-list .message .right {
+  width: 30px;
+}
+
+.right-of-tab > .header {
+  height: 50px;
+  border-bottom: 1px solid #eef3f7;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  justify-content: space-between;
+}
+
+.right-of-tab > .header .action-icons li {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.right-of-tab > .header .right-group {
+  height: 100%;
+  display: flex;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.avatar-group {
+  display: flex;
+  padding: 3px;
+  padding-right: 9px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 1px rgba(0,0,0,0.4);
+  flex-direction: row-reverse;
+  height: 31px;
+}
+
+.avatar {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar-group .avatar {
+  margin-right: -6px;
+}
+
+.right-group .button {
+  margin-left: 20px; 
+  margin-right: 20px;
+  padding: 5px;
+  border: 1px solid #eef3f7;
+  border-radius: 25px;
+  min-width: 80px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.main-mail-area {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.main-mail-area .conversation-area {
+  padding: 15px;
+  flex-basis: 70%;
+  border-right: 1px solid #eef3f7;
+
+}
+
+.main-mail-area .conversation-area .notice {
+  margin-bottom: 20px;
+}
+
+.notice {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.main-mail-area .comments-area {
+  padding: 15px;
+  flex-basis: 30%;
+}
+
+.mail-list .message {
+  margin-bottom: 20px;
+}
+
+.mail-list .message .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mail-list .message .reply-block {
+  display: flex;
+  justify-content: center;
+  color: #6357bc;
+  font-size: 12px;
+}
+
+.mail-list .message .reply-block span {
+  font-size: 12px;
+}
+
+.mail-list .message .username {
+  font-size: 12.5px;
+  color: #373a55;
+  font-weight: bold;
+}
+
+.mail-list .message .message-body {
+  color: #73799b;
+  font-size: 12px;
+  padding: 15px;
+  background-color: #f7f9fe;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border: 1px solid #eef3f7;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.mail-list .message.sent .message-body {
+  color: #ffffff;
+  font-size: 12px;
+  background-color: #6357bc;
+}
+
+.message .footer .message-date {
+  font-size: 10px;
+}
+
+.comment {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.comment .content {
+  padding: 10px;
+  background-color: #f0f9ff;
+  margin-left: 10px;
+  border-radius: 20px;
+  color: #747a9c;
+}
+
+.comment .user-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.comment .user-avatar img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.comments-area .header {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
